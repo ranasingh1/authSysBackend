@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 8000;
 app.use(helmet());
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin: ["http://localhost:3000","https://authsysbackend.onrender.com"],
     credentials: true,
   })
 );
