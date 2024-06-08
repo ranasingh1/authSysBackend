@@ -14,6 +14,9 @@ app.use(
   cors({
     origin: ["http://localhost:3000", "https://authsysbackend.onrender.com"],
     credentials: true,
+    optionsSuccessStatus: 200,
+    preflightContinue: false 
+
   })
 );
 
